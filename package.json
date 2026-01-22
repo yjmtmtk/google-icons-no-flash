@@ -1,0 +1,31 @@
+{
+    "name": "google-icons-no-flash",
+    "version": "1.0.0",
+    "description": "Prevent FOUT (Flash of Unstyled Text) for Material Symbols and Material Icons",
+    "main": "google-icons-no-flash.js",
+    "scripts": {
+        "build": "terser google-icons-no-flash.js -o google-icons-no-flash.min.js --compress --mangle --comments \"/^!|@license|@preserve/\""
+    },
+    "files": [
+        "google-icons-no-flash.js",
+        "google-icons-no-flash.min.js"
+    ],
+    "keywords": [
+        "material-icons",
+        "material-symbols",
+        "google-fonts",
+        "fout",
+        "flash-of-unstyled-text",
+        "font-loading",
+        "icons"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xxx/google-icons-no-flash"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "terser": "^5.46.0"
+    }
+}

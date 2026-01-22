@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Icons No Flash - Demo</title>
+
+    <!-- 1. Load the script (from root for local test) -->
+    <!-- For GitHub Pages, you might use your CDN link: -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/google-icons-no-flash@1/google-icons-no-flash.min.js"></script> -->
+    <script src="../google-icons-no-flash.min.js"></script>
+
+    <!-- 2. Load the fonts -->
+    <!-- Material Symbols Outlined -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            border-bottom: 2px solid #4285f4;
+            padding-bottom: 10px;
+            color: #4285f4;
+        }
+
+        .description {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #4285f4;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .icon-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 12px;
+            min-width: 100px;
+            transition: all 0.2s;
+        }
+
+        .icon-item:hover {
+            border-color: #4285f4;
+            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.1);
+        }
+
+        .icon-name {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Demo styles */
+        .material-symbols-outlined,
+        .material-icons {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Google Icons No Flash Demo</h1>
+
+    <div class="description">
+        <p><strong>Testing FOUT (Flash of Unstyled Text) Prevention:</strong></p>
+        <ol>
+            <li>Open Network tab in DevTools and set Throttling to <strong>"Fast 3G"</strong>.</li>
+            <li>Hard Reload (<strong>Cmd+Shift+R</strong>).</li>
+            <li>Notice that icons don't appear until they've fully loaded. You will <strong>never</strong> see raw text
+                like "home" or "search".</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Material Symbols Outlined</h2>
+        <div class="icon-row">
+            <div class="icon-item">
+                <span class="material-symbols-outlined">home</span>
+                <span class="icon-name">home</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined">search</span>
+                <span class="icon-name">search</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined">settings</span>
+                <span class="icon-name">settings</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined">favorite</span>
+                <span class="icon-name">favorite</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined">person</span>
+                <span class="icon-name">person</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Material Icons (Classic)</h2>
+        <div class="icon-row">
+            <div class="icon-item">
+                <span class="material-icons">face</span>
+                <span class="icon-name">face</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-icons">thumb_up</span>
+                <span class="icon-name">thumb_up</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-icons">shopping_cart</span>
+                <span class="icon-name">shopping_cart</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-icons">delete</span>
+                <span class="icon-name">delete</span>
+            </div>
+            <div class="icon-item">
+                <span class="material-icons">language</span>
+                <span class="icon-name">language</span>
+            </div>
+        </div>
+    </div>
+
+    <p style="margin-top: 50px; color: #999; font-size: 0.9rem;">
+        View on <a href="https://github.com/xxx/google-icons-no-flash" style="color: #4285f4;">GitHub</a>
+    </p>
+
+</body>
+
+</html>
