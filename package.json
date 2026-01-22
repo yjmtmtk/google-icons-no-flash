@@ -1,6 +1,6 @@
 {
     "name": "google-icons-no-flash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Prevent FOUT (Flash of Unstyled Text) for Material Symbols and Material Icons",
     "main": "google-icons-no-flash.js",
     "scripts": {
